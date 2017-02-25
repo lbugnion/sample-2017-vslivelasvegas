@@ -3,14 +3,13 @@ using Android.Widget;
 using Android.OS;
 using System.Net.Http;
 using Data;
+using System;
 
 namespace HelloAndroid
 {
     [Activity(Label = "HelloAndroid", MainLauncher = true, Icon = "@drawable/icon")]
     public class MainActivity : Activity
     {
-        private int _counter;
-
         protected override void OnCreate(Bundle bundle)
         {
             base.OnCreate(bundle);
@@ -23,8 +22,16 @@ namespace HelloAndroid
             button.Click += async (s, e) =>
             {
                 var text = FindViewById<TextView>(Resource.Id.MyTextView);
-                var service = new YoutubeService();
-                text.Text = await service.Refresh();
+
+                try
+                {
+                    var service = new YoutubeService();
+                    text.Text = await service.Refresh();
+                }
+                catch (Exception ex)
+                {
+                    text.Text = ex.Message;
+                }
             };
         }
     }
