@@ -18,4 +18,28 @@
                 var index2 = html.IndexOf("&lt;");
                 html = html.Substring(0, index2);
                 text.Text = html;
-</PropertyValue><PropertyValue name="Item4.Position">5</PropertyValue><PropertyValue name="ItemCount">5</PropertyValue></Category></Category></UserSettings>
+</PropertyValue><PropertyValue name="Item4.Position">5</PropertyValue><PropertyValue name="Item5.DataProvider">{0A057BAD-6706-45D2-A800-683A29EC6BA3}</PropertyValue><PropertyValue name="Item5.ID">154885B7885C5FBCB38844CDAFD87B0E</PropertyValue><PropertyValue name="Item5.Name">-- Windows ---------------------------</PropertyValue><PropertyValue name="Item5.UseDefaultName">false</PropertyValue><PropertyValue name="Item5.Tab">General</PropertyValue><PropertyValue name="Item5.TabID">General</PropertyValue><PropertyValue name="Item5.OriginalTabID">General</PropertyValue><PropertyValue name="Item5.OriginalTab">General</PropertyValue><PropertyValue name="Item5.RecordType">1</PropertyValue><PropertyValue name="Item5.Data">            var button = FindViewById&lt;Button&gt;(Resource.Id.MyButton);
+</PropertyValue><PropertyValue name="Item5.Position">6</PropertyValue><PropertyValue name="Item6.DataProvider">{0A057BAD-6706-45D2-A800-683A29EC6BA3}</PropertyValue><PropertyValue name="Item6.ID">33482F47DCDB2B57839B9D24200C150B</PropertyValue><PropertyValue name="Item6.Name">XAML</PropertyValue><PropertyValue name="Item6.UseDefaultName">false</PropertyValue><PropertyValue name="Item6.Tab">General</PropertyValue><PropertyValue name="Item6.TabID">General</PropertyValue><PropertyValue name="Item6.OriginalTabID">General</PropertyValue><PropertyValue name="Item6.OriginalTab">General</PropertyValue><PropertyValue name="Item6.RecordType">1</PropertyValue><PropertyValue name="Item6.Data">    &lt;Page.BottomAppBar&gt;
+        &lt;AppBar ClosedDisplayMode="Compact"&gt;
+            &lt;AppBarButton Icon="Refresh"
+                          x:Name="RefreshButton" /&gt;
+        &lt;/AppBar&gt;
+    &lt;/Page.BottomAppBar&gt;
+
+    &lt;Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}"&gt;
+        &lt;TextBlock x:Name="MyText"
+                   TextWrapping="Wrap"
+                   Text="Nothing yet"
+                   VerticalAlignment="Top"
+                   FontSize="36"
+                   Margin="0,100,0,0"
+                   HorizontalAlignment="Center" /&gt;
+
+    &lt;/Grid&gt;
+</PropertyValue><PropertyValue name="Item6.Position">7</PropertyValue><PropertyValue name="Item7.DataProvider">{0A057BAD-6706-45D2-A800-683A29EC6BA3}</PropertyValue><PropertyValue name="Item7.ID">10FB0A7D12B5C2107D8AA0C7B0DA34DD</PropertyValue><PropertyValue name="Item7.Name">RefreshButton.Click</PropertyValue><PropertyValue name="Item7.UseDefaultName">false</PropertyValue><PropertyValue name="Item7.Tab">General</PropertyValue><PropertyValue name="Item7.TabID">General</PropertyValue><PropertyValue name="Item7.OriginalTabID">General</PropertyValue><PropertyValue name="Item7.OriginalTab">General</PropertyValue><PropertyValue name="Item7.RecordType">1</PropertyValue><PropertyValue name="Item7.Data">
+            RefreshButton.Click += async (s, e) =&gt;
+            {
+                var service = new YoutubeService();
+                MyText.Text = await service.Refresh();
+            };
+</PropertyValue><PropertyValue name="Item7.Position">8</PropertyValue><PropertyValue name="ItemCount">8</PropertyValue></Category></Category></UserSettings>

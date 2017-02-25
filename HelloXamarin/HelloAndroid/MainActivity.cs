@@ -2,6 +2,7 @@
 using Android.Widget;
 using Android.OS;
 using System.Net.Http;
+using Data;
 
 namespace HelloAndroid
 {
@@ -22,17 +23,8 @@ namespace HelloAndroid
             button.Click += async (s, e) =>
             {
                 var text = FindViewById<TextView>(Resource.Id.MyTextView);
-                var client = new HttpClient();
-
-                var html = await client.GetStringAsync("https://www.youtube.com/watch?v=_ntWKJoqsLQ");
-
-                var div = "<div class=\"watch-view-count\">";
-
-                var index = html.IndexOf(div) + div.Length;
-                html = html.Substring(index);
-                var index2 = html.IndexOf("<");
-                html = html.Substring(0, index2);
-                text.Text = html;
+                var service = new YoutubeService();
+                text.Text = await service.Refresh();
             };
         }
     }
