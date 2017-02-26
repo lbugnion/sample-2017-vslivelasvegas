@@ -18,5 +18,16 @@ namespace UnitTestApp1
 
             Assert.AreEqual(TestYoutubeService.ResultPassed, vm.Result);
         }
+
+        [Test]
+        public void MainViewModel_TestRefreshFail_ShouldCopyExceptionMessageInResult()
+        {
+            var service = new TestYoutubeService(true);
+            var vm = new MainViewModel(service);
+
+            vm.RefreshCommand.Execute(null);
+
+            Assert.AreEqual(TestYoutubeService.ExceptionMessage, vm.Result);
+        }
     }
 }
