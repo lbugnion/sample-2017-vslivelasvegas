@@ -102,4 +102,44 @@
                     () =&gt; _text.Text));
 </PropertyValue><PropertyValue name="Item15.Position">16</PropertyValue><PropertyValue name="Item16.DataProvider">{0A057BAD-6706-45D2-A800-683A29EC6BA3}</PropertyValue><PropertyValue name="Item16.ID">BAEA01E0C87FABB24A22949C76F0871B</PropertyValue><PropertyValue name="Item16.Name">Command</PropertyValue><PropertyValue name="Item16.UseDefaultName">false</PropertyValue><PropertyValue name="Item16.Tab">General</PropertyValue><PropertyValue name="Item16.TabID">General</PropertyValue><PropertyValue name="Item16.OriginalTabID">General</PropertyValue><PropertyValue name="Item16.OriginalTab">General</PropertyValue><PropertyValue name="Item16.RecordType">1</PropertyValue><PropertyValue name="Item16.Data">
             _button.SetCommand(App.Locator.Main.RefreshCommand);
-</PropertyValue><PropertyValue name="Item16.Position">17</PropertyValue><PropertyValue name="ItemCount">17</PropertyValue></Category></Category></UserSettings>
+</PropertyValue><PropertyValue name="Item16.Position">17</PropertyValue><PropertyValue name="Item17.DataProvider">{0A057BAD-6706-45D2-A800-683A29EC6BA3}</PropertyValue><PropertyValue name="Item17.ID">0953EC3A65D79711AF8BCF882EE60C13</PropertyValue><PropertyValue name="Item17.Name">-- Application ---------------</PropertyValue><PropertyValue name="Item17.UseDefaultName">false</PropertyValue><PropertyValue name="Item17.Tab">General</PropertyValue><PropertyValue name="Item17.TabID">General</PropertyValue><PropertyValue name="Item17.OriginalTabID">General</PropertyValue><PropertyValue name="Item17.OriginalTab">General</PropertyValue><PropertyValue name="Item17.RecordType">1</PropertyValue><PropertyValue name="Item17.Data">        private static ViewModelLocator _locator;
+
+        public static ViewModelLocator Locator 
+            =&gt; _locator ?? (_locator = new ViewModelLocator());
+</PropertyValue><PropertyValue name="Item17.Position">18</PropertyValue><PropertyValue name="Item18.DataProvider">{0A057BAD-6706-45D2-A800-683A29EC6BA3}</PropertyValue><PropertyValue name="Item18.ID">2EE60C13BFD5D2688DF7A42FAF8BCF88</PropertyValue><PropertyValue name="Item18.Name">Locator</PropertyValue><PropertyValue name="Item18.UseDefaultName">false</PropertyValue><PropertyValue name="Item18.Tab">General</PropertyValue><PropertyValue name="Item18.TabID">General</PropertyValue><PropertyValue name="Item18.OriginalTabID">General</PropertyValue><PropertyValue name="Item18.OriginalTab">General</PropertyValue><PropertyValue name="Item18.RecordType">1</PropertyValue><PropertyValue name="Item18.Data">        private static ViewModelLocator _locator;
+
+        public static ViewModelLocator Locator 
+            =&gt; _locator ?? (_locator = new ViewModelLocator());
+
+</PropertyValue><PropertyValue name="Item18.Position">19</PropertyValue><PropertyValue name="Item19.DataProvider">{0A057BAD-6706-45D2-A800-683A29EC6BA3}</PropertyValue><PropertyValue name="Item19.ID">B70A7073F5C4EABBB857D551AE7B2F95</PropertyValue><PropertyValue name="Item19.Name">-- ViewController --</PropertyValue><PropertyValue name="Item19.UseDefaultName">false</PropertyValue><PropertyValue name="Item19.Tab">General</PropertyValue><PropertyValue name="Item19.TabID">General</PropertyValue><PropertyValue name="Item19.OriginalTabID">General</PropertyValue><PropertyValue name="Item19.OriginalTab">General</PropertyValue><PropertyValue name="Item19.RecordType">1</PropertyValue><PropertyValue name="Item19.Data">        &lt;Style x:Key="MouseStyle"
+               TargetType="Rectangle"&gt;
+            &lt;Setter Property="Margin"
+                    Value="8" /&gt;
+            &lt;Setter Property="Height"
+                    Value="24" /&gt;
+            &lt;Setter Property="Width"
+                    Value="24" /&gt;
+        &lt;/Style&gt;
+</PropertyValue><PropertyValue name="Item19.Position">20</PropertyValue><PropertyValue name="Item20.DataProvider">{0A057BAD-6706-45D2-A800-683A29EC6BA3}</PropertyValue><PropertyValue name="Item20.ID">EDB26521407832367B5E0B12C7FB02B4</PropertyValue><PropertyValue name="Item20.Name">Attributes</PropertyValue><PropertyValue name="Item20.UseDefaultName">false</PropertyValue><PropertyValue name="Item20.Tab">General</PropertyValue><PropertyValue name="Item20.TabID">General</PropertyValue><PropertyValue name="Item20.OriginalTabID">General</PropertyValue><PropertyValue name="Item20.OriginalTab">General</PropertyValue><PropertyValue name="Item20.RecordType">1</PropertyValue><PropertyValue name="Item20.Data">        private List&lt;Binding&gt; _bindings = new List&lt;Binding&gt;();
+
+</PropertyValue><PropertyValue name="Item20.Position">21</PropertyValue><PropertyValue name="Item21.DataProvider">{0A057BAD-6706-45D2-A800-683A29EC6BA3}</PropertyValue><PropertyValue name="Item21.ID">8AD894D57F63C8BC3441BE78BD100577</PropertyValue><PropertyValue name="Item21.Name">Binding</PropertyValue><PropertyValue name="Item21.UseDefaultName">false</PropertyValue><PropertyValue name="Item21.Tab">General</PropertyValue><PropertyValue name="Item21.TabID">General</PropertyValue><PropertyValue name="Item21.OriginalTabID">General</PropertyValue><PropertyValue name="Item21.OriginalTab">General</PropertyValue><PropertyValue name="Item21.RecordType">1</PropertyValue><PropertyValue name="Item21.Data">
+            _bindings.Add(
+                this.SetBinding(
+                    () =&gt; Application.Locator.Main.Result,
+                    () =&gt; MyLabel.Text));
+</PropertyValue><PropertyValue name="Item21.Position">22</PropertyValue><PropertyValue name="Item22.DataProvider">{0A057BAD-6706-45D2-A800-683A29EC6BA3}</PropertyValue><PropertyValue name="Item22.ID">3AC416CD37649ADD27F000086251D54F</PropertyValue><PropertyValue name="Item22.Name">Command</PropertyValue><PropertyValue name="Item22.UseDefaultName">false</PropertyValue><PropertyValue name="Item22.Tab">General</PropertyValue><PropertyValue name="Item22.TabID">General</PropertyValue><PropertyValue name="Item22.OriginalTabID">General</PropertyValue><PropertyValue name="Item22.OriginalTab">General</PropertyValue><PropertyValue name="Item22.RecordType">1</PropertyValue><PropertyValue name="Item22.Data">
+            MyButton.SetCommand(Application.Locator.Main.RefreshCommand);
+</PropertyValue><PropertyValue name="Item22.Position">23</PropertyValue><PropertyValue name="Item23.DataProvider">{0A057BAD-6706-45D2-A800-683A29EC6BA3}</PropertyValue><PropertyValue name="Item23.ID">B70A7073F5C4EABBB857D551AE7B2F95</PropertyValue><PropertyValue name="Item23.Name">-- App.xaml --</PropertyValue><PropertyValue name="Item23.UseDefaultName">false</PropertyValue><PropertyValue name="Item23.Tab">General</PropertyValue><PropertyValue name="Item23.TabID">General</PropertyValue><PropertyValue name="Item23.OriginalTabID">General</PropertyValue><PropertyValue name="Item23.OriginalTab">General</PropertyValue><PropertyValue name="Item23.RecordType">1</PropertyValue><PropertyValue name="Item23.Data">        &lt;Style x:Key="MouseStyle"
+               TargetType="Rectangle"&gt;
+            &lt;Setter Property="Margin"
+                    Value="8" /&gt;
+            &lt;Setter Property="Height"
+                    Value="24" /&gt;
+            &lt;Setter Property="Width"
+                    Value="24" /&gt;
+        &lt;/Style&gt;
+</PropertyValue><PropertyValue name="Item23.Position">24</PropertyValue><PropertyValue name="Item24.DataProvider">{0A057BAD-6706-45D2-A800-683A29EC6BA3}</PropertyValue><PropertyValue name="Item24.ID">F1AB715FD6833FAF31C11F2157A95AB9</PropertyValue><PropertyValue name="Item24.Name">Resources</PropertyValue><PropertyValue name="Item24.UseDefaultName">false</PropertyValue><PropertyValue name="Item24.Tab">General</PropertyValue><PropertyValue name="Item24.TabID">General</PropertyValue><PropertyValue name="Item24.OriginalTabID">General</PropertyValue><PropertyValue name="Item24.OriginalTab">General</PropertyValue><PropertyValue name="Item24.RecordType">1</PropertyValue><PropertyValue name="Item24.Data">
+    &lt;Application.Resources&gt;
+        &lt;vm:ViewModelLocator x:Key="Locator" /&gt;
+    &lt;/Application.Resources&gt;
+</PropertyValue><PropertyValue name="Item24.Position">25</PropertyValue><PropertyValue name="ItemCount">25</PropertyValue></Category></Category></UserSettings>
