@@ -1,0 +1,34 @@
+using MvvmInjection.Data.Design;
+
+namespace MvvmInjection.Data.ViewModel
+{
+    public class ViewModelLocator
+    {
+        public const bool UseDesignTimeData = false;
+
+        private MainViewModel _main;
+
+        public MainViewModel Main
+        {
+            get
+            {
+                IYoutubeService service;
+
+#if DEBUG
+                if (UseDesignTimeData)
+                {
+                    service = new DesignYoutubeService();
+                }
+                else
+                {
+#endif
+                    service = new YoutubeService();
+#if DEBUG
+                }
+#endif
+
+                return _main ?? (_main = new MainViewModel(service));
+            }
+        }
+    }
+}
