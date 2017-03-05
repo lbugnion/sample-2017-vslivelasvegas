@@ -9,6 +9,7 @@
 
     <Page.Resources>
         <vm:MainViewModel x:Key="Main" />
+        
         <DataTemplate x:Key="DataTemplate1">
             <Grid>
                 <TextBlock TextWrapping="Wrap"

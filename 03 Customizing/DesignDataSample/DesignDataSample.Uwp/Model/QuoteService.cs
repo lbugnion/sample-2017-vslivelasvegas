@@ -21,9 +21,8 @@ namespace DesignDataSample.Uwp.ViewModel
                 "Some are born great, others achieve greatness"
             };
 
-            list.Shuffle();
-
             // Return in random order
+            list.Shuffle();
 
             return Task.FromResult((IList<string>)list);
         }

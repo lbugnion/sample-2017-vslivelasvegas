@@ -46,43 +46,5 @@
     </Page.DataContext>
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-        <VisualStateManager.VisualStateGroups>
-            <VisualStateGroup>
-                <VisualState x:Name="WideState">
-                    <VisualState.StateTriggers>
-                        <AdaptiveTrigger MinWindowWidth="720" />
-                    </VisualState.StateTriggers>
-
-                    <VisualState.Setters>
-                        <Setter Target="MyGrid.Visibility"
-                                Value="Visible" />
-                        <Setter Target="MyList.Visibility"
-                                Value="Collapsed" />
-                    </VisualState.Setters>
-                </VisualState>
-
-                <VisualState x:Name="NarrowState">
-                    <VisualState.StateTriggers>
-                        <AdaptiveTrigger MinWindowWidth="0" />
-                    </VisualState.StateTriggers>
-
-                    <VisualState.Setters>
-                        <Setter Target="MyGrid.Visibility"
-                                Value="Collapsed" />
-                        <Setter Target="MyList.Visibility"
-                                Value="Visible" />
-                    </VisualState.Setters>
-                </VisualState>
-            </VisualStateGroup>
-        </VisualStateManager.VisualStateGroups>
-        
-        <ListView ItemsSource="{Binding Quotes}"
-                  x:Name="MyList"
-                  ItemTemplate="{StaticResource ListViewTemplate}"
-                  ItemContainerStyle="{StaticResource ListViewItemStyle}"
-                  Margin="12" />
-        <GridView ItemsSource="{Binding Quotes}"
-                  x:Name="MyGrid"
-                  ItemTemplate="{StaticResource GridViewTemplate}" />
     </Grid>
 </Page>

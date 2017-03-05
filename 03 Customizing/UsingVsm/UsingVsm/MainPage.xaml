@@ -8,7 +8,8 @@
       mc:Ignorable="d">
 
     <RelativePanel x:Name="MyRelativePanel"
-                    Margin="12">
+                   Padding="12"
+                   Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
         <VisualStateManager.VisualStateGroups>
             <VisualStateGroup>
                 <VisualState x:Name="WideState">
@@ -61,15 +62,17 @@
                     </VisualState.Setters>
                 </VisualState>
             </VisualStateGroup>
+            
         </VisualStateManager.VisualStateGroups>
 
+
         <TextBlock x:Name="FirstNameLabel"
-                    Text="First Name:"
-                    FontSize="26"
-                    Margin="0,3,8,8" />
+                   Text="First Name:"
+                   FontSize="26"
+                   Margin="0,3,8,8" />
 
         <TextBox PlaceholderText="Enter your first name"
-                    x:Name="FirstNameText"
-                    FontSize="24" />
+                 x:Name="FirstNameText"
+                 FontSize="24" />
     </RelativePanel>
 </Page>

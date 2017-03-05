@@ -1,5 +1,4 @@
 ﻿using System.Collections.Generic;
-using System.Collections.ObjectModel;
 using System.ComponentModel;
 using System.Runtime.CompilerServices;
 using System.Threading.Tasks;
@@ -9,8 +8,6 @@ namespace DesignDataSample.Uwp.ViewModel
     public class MainViewModel : INotifyPropertyChanged
     {
         private QuoteService _service;
-
-        public event PropertyChangedEventHandler PropertyChanged;
 
         public string Title
         {
@@ -51,9 +48,15 @@ namespace DesignDataSample.Uwp.ViewModel
             Quotes = await _service.GetQuotes();
         }
 
+        #region INPC Implementation
+
+        public event PropertyChangedEventHandler PropertyChanged;
+
         public void RaisePropertyChanged([CallerMemberName] string propertyName = null)
         {
             PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
         }
+
+        #endregion
     }
 }
