@@ -62,9 +62,8 @@
                     </VisualState.Setters>
                 </VisualState>
             </VisualStateGroup>
-            
-        </VisualStateManager.VisualStateGroups>
 
+        </VisualStateManager.VisualStateGroups>
 
         <TextBlock x:Name="FirstNameLabel"
                    Text="First Name:"

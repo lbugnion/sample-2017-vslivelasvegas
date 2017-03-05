@@ -9,7 +9,7 @@
 
     <Page.Resources>
         <vm:MainViewModel x:Key="Main" />
-        
+
         <DataTemplate x:Key="DataTemplate1">
             <Grid>
                 <TextBlock TextWrapping="Wrap"
@@ -20,13 +20,13 @@
             </Grid>
         </DataTemplate>
     </Page.Resources>
-    
+
     <Page.BottomAppBar>
         <CommandBar>
             <CommandBar.Content>
                 <Grid />
             </CommandBar.Content>
-            
+
             <AppBarButton Icon="Refresh"
                           Label="refresh"
                           Click="RefreshButtonClick" />
@@ -48,7 +48,7 @@
                    FontSize="20"
                    FontWeight="Bold"
                    Margin="12,0,0,0" />
-        
+
         <ItemsControl Grid.Row="1"
                       ItemsSource="{Binding Quotes}"
                       ItemTemplate="{StaticResource DataTemplate1}" />

@@ -10,7 +10,7 @@
     <Page.Resources>
         <ViewModel:SecondViewModel x:Key="Vm"
                                    d:IsDataSource="True" />
-        
+
         <DataTemplate x:Key="GridViewTemplate">
             <Grid Width="300"
                   Height="150"
@@ -25,7 +25,7 @@
                            Margin="10" />
             </Grid>
         </DataTemplate>
-        
+
         <DataTemplate x:Key="ListViewTemplate">
             <Grid Background="#FF6C6C6C"
                   Height="60"
@@ -40,7 +40,7 @@
             </Grid>
         </DataTemplate>
     </Page.Resources>
-    
+
     <Page.DataContext>
         <StaticResource ResourceKey="Vm" />
     </Page.DataContext>
@@ -75,12 +75,13 @@
                 </VisualState>
             </VisualStateGroup>
         </VisualStateManager.VisualStateGroups>
-        
+
         <ListView ItemsSource="{Binding Quotes}"
                   x:Name="MyList"
                   ItemTemplate="{StaticResource ListViewTemplate}"
                   ItemContainerStyle="{StaticResource ListViewItemStyle}"
                   Margin="12" />
+        
         <GridView ItemsSource="{Binding Quotes}"
                   x:Name="MyGrid"
                   ItemTemplate="{StaticResource GridViewTemplate}" />

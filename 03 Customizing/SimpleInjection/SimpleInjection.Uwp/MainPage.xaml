@@ -7,13 +7,13 @@
       xmlns:vm="using:SimpleInjectionData.ViewModel"
       mc:Ignorable="d"
       DataContext="{Binding Main, Source={StaticResource Locator}}">
-    
+
     <Page.BottomAppBar>
         <CommandBar>
             <CommandBar.Content>
                 <Grid />
             </CommandBar.Content>
-            
+
             <AppBarButton Icon="Refresh"
                           Label="refresh"
                           Click="RefreshButtonClick" />
