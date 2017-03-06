@@ -6,13 +6,16 @@
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
       mc:Ignorable="d"
       DataContext="{Binding Main, Source={StaticResource Locator}}">
-    
+
     <Page.BottomAppBar>
-        <AppBar ClosedDisplayMode="Compact">
+        <CommandBar>
+            <CommandBar.Content>
+                <Grid />
+            </CommandBar.Content>
             <AppBarButton Icon="Refresh"
-                          x:Name="RefreshButton"
-                          Command="{Binding RefreshCommand}"/>
-        </AppBar>
+                          Label="refresh"
+                          Command="{Binding RefreshCommand, Mode=OneWay}" />
+        </CommandBar>
     </Page.BottomAppBar>
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">

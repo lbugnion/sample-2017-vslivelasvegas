@@ -1,7 +1,6 @@
 ﻿using Android.App;
 using Android.Widget;
 using Android.OS;
-using Data;
 using GalaSoft.MvvmLight.Helpers;
 using System.Collections.Generic;
 

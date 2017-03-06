@@ -19,17 +19,13 @@ namespace UsingConstraints
         {
             base.ViewDidLoad();
 
-            //MyButton.TouchUpInside += (s, e) =>
-            //{
-            //    MyText.Text = _usingFirst ? LoremIpsum2 : LoremIpsum1;
-            //    _usingFirst = !_usingFirst;
-            //};
-        }
+            MyButton.TouchUpInside += (s, e) =>
+            {
+                MyText.Text = _usingFirst ? LoremIpsum2 : LoremIpsum1;
+                _usingFirst = !_usingFirst;
+            };
 
-        public override void DidReceiveMemoryWarning()
-        {
-            base.DidReceiveMemoryWarning();
-            // Release any cached data, images, etc that aren't in use.
+            MyText.Text = LoremIpsum1;
         }
     }
 }

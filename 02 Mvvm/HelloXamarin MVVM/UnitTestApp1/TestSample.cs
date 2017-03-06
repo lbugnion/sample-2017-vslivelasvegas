@@ -1,5 +1,4 @@
-﻿using System;
-using NUnit.Framework;
+﻿using NUnit.Framework;
 using UnitTestApp1.Model;
 using HelloAndroid.ViewModel;
 

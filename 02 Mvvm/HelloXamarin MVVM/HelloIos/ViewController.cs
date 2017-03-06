@@ -1,5 +1,4 @@
-﻿using Data;
-using GalaSoft.MvvmLight.Helpers;
+﻿using GalaSoft.MvvmLight.Helpers;
 using System;
 using System.Collections.Generic;
 using UIKit;
@@ -24,12 +23,6 @@ namespace HelloIos
                     () => MyLabel.Text));
 
             MyButton.SetCommand(Application.Locator.Main.RefreshCommand);
-        }
-
-        public override void DidReceiveMemoryWarning()
-        {
-            base.DidReceiveMemoryWarning();
-            // Release any cached data, images, etc that aren't in use.
         }
     }
 }
