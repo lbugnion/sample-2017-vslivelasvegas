@@ -5,12 +5,15 @@
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
       mc:Ignorable="d">
-
     <Page.BottomAppBar>
-        <AppBar ClosedDisplayMode="Compact">
-            <AppBarButton Icon="Refresh"
-                          x:Name="RefreshButton" />
-        </AppBar>
+        <CommandBar>
+            <CommandBar.Content>
+                <Grid />
+            </CommandBar.Content>
+            <AppBarButton x:Name="RefreshButton"
+                          Icon="Refresh"
+                          Label="refresh" />
+        </CommandBar>
     </Page.BottomAppBar>
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
