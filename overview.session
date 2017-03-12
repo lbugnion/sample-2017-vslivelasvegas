@@ -1,0 +1,103 @@
+Xamarin Overview
+
+Preparation
+
+	• Reboot
+	• Make sure that Surface is connected to TripMate
+	• Make sure that TripMate is connected to Internet
+	• Make sure that Phone is connected to TripMate
+	• Make sure that Mac is connected to TripMate
+	• Open TightVNC and connect to the Mac
+	• Exit all apps on iOS
+	• Start HelloIos on iOS
+	• Start HelloXamarin.Forms on iOS
+	• Open presentation
+	• Load XamarinOverview session in PresentationBuddy
+	• Start the Android emulator
+	• Make sure that HelloAndroid1 is installed and works
+	• Make sure that HelloAndroid is installed and works
+	• Make sure that HelloWindows is installed and works
+	• Make sure that HelloIos is installed and works
+	• End all running applications (Command - Shift - HH)
+	• Delete projects from Visual Studio folder
+	• Create a new application HelloAndroid in Solution HelloXamarin
+	• Font 17
+	• Make sure that snippets are loaded
+	• Open the designer
+	• Open HelloXamarin - Start with iOS + Windows
+	• Open IOS designer
+	• Open UWP designer
+	• Create a new application HelloXamarinForms
+	• Font 17
+	• Make sure that snippets are loaded
+	• Make sure that HelloXamarinForms is installed and works
+		○ Android
+		○ iOS
+		○ Windows
+	• ------------------------
+	• Copy HelloXamarin MVVM - Start
+	• Copy HelloXamarin MVVM 
+	• Copy the Flowers app
+	• Copy the Binding Sample app
+	• Make sure that UnitTest app is installed in Android
+	• Make sure that HelloXamarin MVVM is installed in Android
+	• Make sure that HelloXamarin MVVM is installed in Windows
+	• Make sure that HelloXamarin MVVM is installed in iOS
+	• Make sure the Binding Sample app is deployed on Android
+	• Make sure the Binding Sample app is deployed on iOS
+	• Make sure the Binding Sample app is deployed on Win10
+	• Make sure the Flowers app is deployed on Android
+	• Make sure the Flowers app is deployed on Win10
+	• Make sure the Flowers app is deployed on iOS
+	• Make sure the Flowers Forms is deployed on Android
+	• Make sure the Flowers Forms is deployed on Win10
+	• Make sure the Flowers Forms is deployed on iOS
+	• End all running applications on Android
+	• End all running applications on iOS
+	• End all running application on Windows
+
+
+Introduction	3'	0:03
+Xamarin history, principles, tools	10'	0:13
+Setting up	7'	0:20
+Demo	19'	0:39
+        • Show the designer
+        • Add button MyButton
+        • Add TextView MyText
+        • Add layout_margin_top
+        • Gravity
+        • TextSize 32dp
+        • Show the markup
+        • Open MainActivity
+        • Uncomment the SetContentView
+        • Build simple example
+        • Run --> HelloXamarin1
+        • Make more complex example
+        • Use Nuget to add HttpClient
+        • Run --> HelloXamarin
+        • Move to other solution with iOS and UWP
+        • Create Data project
+        • Manage Nuget project
+                ○ Add to Data
+                ○ Remove from HelloAndroid
+        • Move code to Data, YoutubeService
+        • Edit iOS project --> HelloIos
+        • Edit UWP project --> HelloWindows
+
+Screenshots designers	1'	0:40
+Xamarin.Forms	10'	0:50
+Demo	18'	1:08
+        • Explain architecture
+        • Set the XAML
+        • Set the button clicked event handler
+        • Run in Android
+        • Run in iOS
+        • Run in UWP
+        • Add MyLabel in Forms project
+        • Add MyLabelRenderer in UWP project
+        • Implement OnElementChanged
+        • Add assembly attribute
+        • Run in UWP, explain
+        
+What else	5'	1:13
+Resources, Conclusion, Next Session	2'	1:15
