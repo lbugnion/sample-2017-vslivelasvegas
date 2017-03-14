@@ -9,6 +9,5 @@ namespace HelloXamarinForms
 {
     public class MyLabel : Label
     {
-
     }
 }

@@ -10,17 +10,17 @@
         <Button x:Name="MyButton"
                 Text="Click me"/>
 
-        <local:MyLabel x:Name="MyText"
+        <Label x:Name="MyText"
                HorizontalOptions="Center">
-            <local:MyLabel.Text>
-                <OnPlatform x:TypeArguments="x:String"  
-                            Android="Hello Android"
+            <Label.Text>
+                <OnPlatform Android="Hello Android"
+                            iOS="Hello iOS"
                             WinPhone="Hello WinPhone" />
-            </local:MyLabel.Text>
-        </local:MyLabel>
+            </Label.Text>
+        </Label>
 
-        <androidWidget:TextView Text="This will show in Android only"
+        <androidWidget:TextView Text="Native Text"
                                 x:Arguments="{x:Static formsandroid:Forms.Context}" />
-    </StackLayout>
+    </StackLayout>    
     
 </ContentPage>
