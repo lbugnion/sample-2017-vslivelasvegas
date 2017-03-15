@@ -7,8 +7,7 @@ namespace MvvmInjection.Data.ViewModel
 {
     public class ViewModelLocator
     {
-        public static readonly bool UseDesignTimeData = false
-            || ViewModelBase.IsInDesignModeStatic;
+        public static readonly bool UseDesignTimeData = true;
 
         static ViewModelLocator()
         {
