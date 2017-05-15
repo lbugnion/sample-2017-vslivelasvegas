@@ -2,7 +2,7 @@
 using Android.Widget;
 using Android.OS;
 
-namespace HelloAndroid
+namespace HelloAndroid1
 {
     [Activity(Label = "HelloAndroid1", MainLauncher = true, Icon = "@drawable/icon")]
     public class MainActivity : Activity

@@ -19,6 +19,7 @@ namespace HelloIos
             {
                 try
                 {
+                    MyLabel.Text = "Please wait";
                     var service = new YoutubeService();
                     MyLabel.Text = await service.Refresh();
                 }
@@ -27,12 +28,6 @@ namespace HelloIos
                     MyLabel.Text = ex.Message;
                 }
             };
-        }
-
-        public override void DidReceiveMemoryWarning()
-        {
-            base.DidReceiveMemoryWarning();
-            // Release any cached data, images, etc that aren't in use.
         }
     }
 }
