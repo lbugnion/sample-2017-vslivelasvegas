@@ -55,7 +55,7 @@ Code samples for Customizing your UI for Mobile Devices: Techniques to Create a 
 
 ### WhyResponsive
 
-Simple app showing the important of responsive design
+Simple app showing the importance of responsive design
 
 ### UsingVsm
 
